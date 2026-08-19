@@ -41,19 +41,3 @@ models:
       +materialized: view
     marts:
       +materialized: table
-
-# Configuring sources
-
-sources:
-  name: jaffle_shop
-    database: raw
-    schema: jaffle_shop
-    tables:
-      - name: orders
-      - name: customers
-
-  name: stripe
-    database: raw
-    schema: stripe
-    tables:
-      - name: payments
